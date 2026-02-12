@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Express API server for file uploads to S3 and hybrid search via Bedrock + OpenSearch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.913.0",
+    "@aws-sdk/client-s3": "^3.908.0",
+    "@aws-sdk/credential-provider-node": "^3.913.0",
+    "@opensearch-project/opensearch": "^3.5.1",
+    "busboy": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "stopword": "^3.1.5"
+  }
+}
